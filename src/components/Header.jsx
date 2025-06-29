@@ -14,6 +14,7 @@ import { NavLink } from "react-router-dom";
 const navigation = [
   { name: "Home", to: "/", current: true },
   { name: "Tours", to: "/tours", current: false },
+  { name: "Gallery", to: "/gallery", current: false },
 ];
 
 function classNames(...classes) {
