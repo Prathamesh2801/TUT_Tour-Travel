@@ -13,10 +13,12 @@ import { NavLink } from "react-router-dom";
 
 const navigation = [
   { name: "Home", to: "/", current: true },
-  { name: "Tours", to: "/tours", current: false },
+
+ { name: "About", to: "/tours", current: false },
   { name: "Gallery", to: "/gallery", current: false },
   { name: "Contact us", to: "/contact", current: false },
   
+
 ];
 
 function classNames(...classes) {
