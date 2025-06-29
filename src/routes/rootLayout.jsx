@@ -7,7 +7,11 @@ import Testimonials from "../components/Testimonials";
 import Footer from "../components/Footer";
 import TourSection from "../components/Tours/TourSection";
 import TourDetail from "../components/Tours/TourDetail";
+
 import Contact from "../components/Contact/Contact";
+
+
+import Gallery from "../components/Gallery";
 
 export default function rootLayout() {
   return (
@@ -25,10 +29,37 @@ export default function rootLayout() {
             </>
           }
         />
+
         <Route  path="/tours"element={ <><TourSection /> </> } />
         <Route path="/tourDetail/:tourID" element={<><TourDetail /></>}/>
          <Route path="/contact" element={<><Contact /></>}/>
 
+
+
+        <Route
+          path="/tours"
+          element={
+            <>
+              <TourSection />
+            </>
+          }
+        />
+        <Route
+          path="/tourDetail/:tourID"
+          element={
+            <>
+              <TourDetail />
+            </>
+          }
+          />
+          <Route
+          path="/gallery"
+          element={
+            <>
+              <Gallery/>
+            </>
+          }
+        />
 
       </Routes>
       <Footer />
