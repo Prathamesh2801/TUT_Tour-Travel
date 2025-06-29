@@ -54,13 +54,12 @@ export default function Header() {
                   <NavLink
                     key={item.name}
                     to={item.to}
-                    aria-current={item.current ? "page" : undefined}
-                    className={classNames(
-                      item.current
-                        ? "bg-gray-900 text-white"
-                        : "text-gray-300 hover:bg-gray-700 hover:text-white",
-                      "rounded-md px-3 py-2 text-sm font-medium"
-                    )}
+                    className={
+                      ({ isActive }) =>
+                        isActive
+                          ? "bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium" // active styles
+                          : "text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium" // normal styles
+                    }
                   >
                     {item.name}
                   </NavLink>
@@ -131,13 +130,12 @@ export default function Header() {
             <NavLink
               key={item.name}
               to={item.to}
-              aria-current={item.current ? "page" : undefined}
-              className={classNames(
-                item.current
-                  ? "bg-gray-900 text-white"
-                  : "text-gray-300 hover:bg-gray-700 hover:text-white",
-                "block rounded-md px-3 py-2 text-base font-medium"
-              )}
+              className={
+                ({ isActive }) =>
+                  isActive
+                    ? "bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium" // active styles
+                    : "text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium" // normal styles
+              }
             >
               {item.name}
             </NavLink>
