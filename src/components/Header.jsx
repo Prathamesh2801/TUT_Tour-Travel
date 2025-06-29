@@ -13,7 +13,7 @@ import { NavLink } from "react-router-dom";
 
 const navigation = [
   { name: "Home", to: "/", current: true },
-  { name: "Tours", to: "/tours", current: false },
+  { name: "About", to: "/tours", current: false },
 ];
 
 function classNames(...classes) {
