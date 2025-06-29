@@ -13,10 +13,16 @@ import { NavLink } from "react-router-dom";
 
 const navigation = [
   { name: "Home", to: "/", current: true },
+<<<<<<< HEAD
+  { name: "About", to: "/tours", current: false },
+    { name: "Gallery", to: "/gallery", current: false },
+  { name: "Contact", to: "/contact", current: false },
+=======
  { name: "About", to: "/tours", current: false },
   { name: "Gallery", to: "/gallery", current: false },
   { name: "Contact us", to: "/contact", current: false },
   
+>>>>>>> 3c489ca92a2469872c667c8a8470d174fe0c2291
 
 ];
 
@@ -46,11 +52,7 @@ export default function Header() {
           </div>
           <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
             <div className="flex shrink-0 items-center">
-              <img
-                alt="Your Company"
-                src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=500"
-                className="h-8 w-auto"
-              />
+              <img src='https://www.freeiconspng.com/thumbs/travel-icon/travel-guide-icon-map-ticket-travel-icon-17.png' className='h-10 my-auto w-10 filter invert'></img>
             </div>
             <div className="hidden sm:ml-6 sm:block">
               <div className="flex space-x-4">
@@ -58,12 +60,13 @@ export default function Header() {
                   <NavLink
                     key={item.name}
                     to={item.to}
-                    className={
-                      ({ isActive }) =>
-                        isActive
-                          ? "bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium" // active styles
-                          : "text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium" // normal styles
-                    }
+                    aria-current={item.current ? "page" : undefined}
+                    className={classNames(
+                      item.current
+                        ? " hover:bg-gray-700 text-white"
+                        : "text-gray-300 hover:bg-gray-700 hover:text-white",
+                      "rounded-md px-3 py-2 text-sm font-medium"
+                    )}
                   >
                     {item.name}
                   </NavLink>
@@ -134,12 +137,13 @@ export default function Header() {
             <NavLink
               key={item.name}
               to={item.to}
-              className={
-                ({ isActive }) =>
-                  isActive
-                    ? "bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium" // active styles
-                    : "text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium" // normal styles
-              }
+              aria-current={item.current ? "page" : undefined}
+              className={classNames(
+                item.current
+                  ? "bg-gray-900 text-white"
+                  : "text-gray-300 hover:bg-gray-700 hover:text-white",
+                "block rounded-md px-3 py-2 text-base font-medium"
+              )}
             >
               {item.name}
             </NavLink>
