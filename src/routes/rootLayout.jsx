@@ -7,6 +7,8 @@ import Testimonials from "../components/Testimonials";
 import Footer from "../components/Footer";
 import TourSection from "../components/Tours/TourSection";
 import TourDetail from "../components/Tours/TourDetail";
+import Contact from "../components/Contact/Contact";
+
 export default function rootLayout() {
   return (
     <BrowserRouter>
@@ -23,22 +25,11 @@ export default function rootLayout() {
             </>
           }
         />
-        <Route
-          path="/tours"
-          element={
-            <>
-              <TourSection />
-            </>
-          }
-        />
-        <Route
-          path="/tourDetail/:tourID"
-          element={
-            <>
-              <TourDetail />
-            </>
-          }
-        />
+        <Route  path="/tours"element={ <><TourSection /> </> } />
+        <Route path="/tourDetail/:tourID" element={<><TourDetail /></>}/>
+         <Route path="/contact" element={<><Contact /></>}/>
+
+
       </Routes>
       <Footer />
     </BrowserRouter>
