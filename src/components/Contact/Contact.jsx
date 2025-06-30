@@ -16,7 +16,6 @@ export default function Contact() {
 
     const { name, email, message } = formData;
 
-    // ✅ Fixed string interpolation using backticks
     const whatsappMessage = `Name: ${name}%0AEmail: ${email}%0AMessage: ${message}`;
     const phoneNumber = '8623940232'; // <-- Replace with your number
     const url = `https://wa.me/${phoneNumber}?text=${whatsappMessage}`;
@@ -26,7 +25,7 @@ export default function Contact() {
 
   return (
 <section 
- className="bg-gradient-to-r from-blue-950 via-purple-600 to-purple-400 text-white py-24 text-center">
+ className="bg-orange-50 text-white py-24 text-center">
 
     <section className="">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -53,7 +52,7 @@ export default function Contact() {
           <div className="bg-blue-200 p-5 lg:p-11 lg:rounded-r-2xl rounded-2xl z-20">
             <form
               onSubmit={handleSubmit}
-              className="max-w-md mx-auto p-6 h-[100%] bg-blue-500 flex flex-col justify-around  rounded-xl shadow-lg space-y-4"
+              className="max-w-md mx-auto p-6 h-[100%] bg-blue-100 flex flex-col justify-around  rounded-xl shadow-lg space-y-4"
             >
               <h2 className="text-xl font-semibold text-indigo-900 text-center">
                 Drop A Message
