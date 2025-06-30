@@ -17,7 +17,7 @@ export default function Contact() {
     const { name, email, message } = formData;
 
     const whatsappMessage = `Name: ${name}%0AEmail: ${email}%0AMessage: ${message}`;
-    const phoneNumber = '8623940232'; // <-- Replace with your number
+    const phoneNumber = '8623940232';
     const url = `https://wa.me/${phoneNumber}?text=${whatsappMessage}`;
 
     window.open(url, '_blank');
@@ -30,7 +30,6 @@ export default function Contact() {
     <section className="">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 grid-cols-1 gap-5">
-          {/* Map Section */}
           <div className="lg:mb-0 mb-10 z-10">
             <div className="group w-full h-full">
               <div className="relative h-full">
@@ -48,7 +47,6 @@ export default function Contact() {
             </div>
           </div>
 
-          {/* Form Section */}
           <div className="bg-blue-200 p-5 lg:p-11 lg:rounded-r-2xl rounded-2xl z-20">
             <form
               onSubmit={handleSubmit}
@@ -88,12 +86,22 @@ export default function Contact() {
                 rows="4"
               />
 
-              <button
-                type="submit"
-                className="w-full h-[60px] bg-orange-600 text-white py-2 rounded-xl hover:bg-orange-700"
-              >
-                Send via WhatsApp
-              </button>
+<div className="flex gap-4">
+  <button
+    type="submit"
+    className="w-60 h-[60px] bg-blue-600 text-white py-2 px-4 rounded-xl hover:bg-blue-700"
+  >
+    Login
+  </button>
+
+  <button
+    type="submit"
+    className="w-30 h-[60px] bg-green-600 text-white py-2 px-4 rounded-xl hover:bg-green-700"
+  >
+    Registration
+  </button>
+</div>
+
             </form>
           </div>
         </div>
