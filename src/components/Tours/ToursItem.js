@@ -68,4 +68,46 @@ export const tours = [
     rating: 4.8,
     reviews: 142,
   },
+    {
+    id: 6,
+    name: "Andaman Island Adventure",
+    location: "Port Blair, Havelock Island",
+    price: "$550",
+    href: "#",
+    imageSrc: i5,
+    imageAlt: "Clear turquoise water and coral reefs of Andaman Islands.",
+    longDescription:
+      "Dive into the turquoise waters of the Andaman Islands, visit Radhanagar Beach, explore coral reefs, and witness rich marine life. A thrilling 5-day island adventure awaits.",
+    rating: 4.8,
+    reviews: 142,
+  },
+
+    {
+    id: 7,
+    name: "Andaman Island Adventure",
+    location: "Port Blair, Havelock Island",
+    price: "$550",
+    href: "#",
+    imageSrc: i5,
+    imageAlt: "Clear turquoise water and coral reefs of Andaman Islands.",
+    longDescription:
+      "Dive into the turquoise waters of the Andaman Islands, visit Radhanagar Beach, explore coral reefs, and witness rich marine life. A thrilling 5-day island adventure awaits.",
+    rating: 4.8,
+    reviews: 142,
+  },
+    {
+    id: 8,
+    name: "Andaman Island Adventure",
+    location: "Port Blair, Havelock Island",
+    price: "$550",
+    href: "#",
+    imageSrc: i5,
+    imageAlt: "Clear turquoise water and coral reefs of Andaman Islands.",
+    longDescription:
+      "Dive into the turquoise waters of the Andaman Islands, visit Radhanagar Beach, explore coral reefs, and witness rich marine life. A thrilling 5-day island adventure awaits.",
+    rating: 4.8,
+    reviews: 142,
+  },
+
+
 ];

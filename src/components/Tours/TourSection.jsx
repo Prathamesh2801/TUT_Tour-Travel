@@ -2,7 +2,16 @@ import { tours } from "./ToursItem";
 import { Link } from "react-router-dom";
 export default function TourSection() {
   return (
+    
     <div className="bg-black">
+<h3 className='font-medium  text-blue-500'>
+  <a href="/adventure" className="text-blue-500 no-underline hover:underline">Adventure</a> /{" "}
+  <a href="/trekking" className="text-blue-500 no-underline hover:underline">Treckking</a> /{" "}
+  <a href="/beaches" className="text-blue-500 no-underline hover:underline">Beaches</a> /{""}
+    <a href="/Heritages" className="text-blue-500 no-underline hover:underline">Heritages</a>
+
+</h3>
+
       <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
         <div className="md:flex md:items-center md:justify-between">
           <h2 className="text-2xl font-bold tracking-tight text-white">
@@ -27,6 +36,13 @@ export default function TourSection() {
                     src={product.imageSrc}
                     className="size-full object-cover"
                   />
+                                <Link
+                to={"/tourDetail/" + product.id}
+                className="absolute bottom-20 left-1/2 -translate-x-1/2 bg-orange-500 text-white px-3 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity text-sm"
+              >
+                DETAILS
+              </Link>
+
                 </div>
                 <h3 className="mt-4 text-sm text-gray-700">
                   <a href={product.href}>
