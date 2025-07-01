@@ -1,12 +1,12 @@
 import { useParams } from "react-router-dom";
-import { tours } from "./ToursItem";
+import  { Detail89 }  from "../Contact/Detail";
 
-export default function TourDetail() {
+export default function PracticeItem() {
   const params = useParams();
-  console.log(params.tourID);
+  console.log(params.Detail89ID);
 
-  const tourItem = tours.find((tourData) => tourData.id == params.tourID);
-  console.log(tourItem);
+  const travel = Detail89.find((practiceData) => practiceData.id == params.Detail89ID);
+  console.log(travel);
   return (
     <section className="py-8 bg-white md:py-16 dark:bg-gray-900 antialiased">
       <div className="max-w-screen-xl px-4 mx-auto 2xl:px-0">
@@ -14,23 +14,23 @@ export default function TourDetail() {
           <div className="shrink-0 max-w-md lg:max-w-lg mx-auto">
             <img
               className="w-full dark:hidden"
-              src={tourItem.imageSrc}
-              alt={tourItem.imageAlt}
+              src={travel.imageSrc}
+              alt={travel.imageAlt}
             />
             <img
               className="w-full hidden dark:block"
-              src={tourItem.imageSrc}
-              alt={tourItem.imageAlt}
+              src={travel.imageSrc}
+              alt={travel.imageAlt}
             />
           </div>
 
           <div className="mt-6 sm:mt-8 lg:mt-0">
             <h1 className="text-xl font-semibold text-gray-900 sm:text-2xl dark:text-white">
-              {tourItem.name}
+              {travel.name}
             </h1>
             <div className="mt-4 sm:items-center sm:gap-4 sm:flex">
               <p className="text-2xl font-extrabold text-gray-900 sm:text-3xl dark:text-white">
-                {tourItem.price}
+                {travel.price}
               </p>
 
               <div className="flex items-center gap-2 mt-2 sm:mt-0">
@@ -82,7 +82,7 @@ export default function TourDetail() {
                   </svg>
                 </div>
                 <p className="text-sm font-medium leading-none text-gray-500 dark:text-gray-400">
-                  ({tourItem.rating})
+                  ({travel.rating})
                 </p>
                 <a
                   href="#"
@@ -150,7 +150,7 @@ export default function TourDetail() {
             <hr className="my-6 md:my-8 border-gray-200 dark:border-gray-800" />
 
             <p className="mb-6 text-gray-500 dark:text-gray-400">
-             {tourItem.longDescription}
+             {travel.longDescription}
             </p>
 
            
