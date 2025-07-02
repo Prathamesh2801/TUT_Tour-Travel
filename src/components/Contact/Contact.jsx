@@ -25,7 +25,7 @@ export default function Contact() {
 
   return (
 <section 
- className="bg-orange-50 text-white py-24 text-center">
+ className="bg-gray-900 text-white py-24 text-center">
 
     <section className="">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
