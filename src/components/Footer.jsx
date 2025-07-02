@@ -89,16 +89,17 @@ const navigation = {
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-900">
+    <footer className="bg-orange-500">
       <div className="mx-auto max-w-7xl px-6 pt-16 pb-8 sm:pt-24 lg:px-8 lg:pt-32">
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
           <div className="space-y-8">
             <img
               alt="Company name"
-              src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=500"
-              className="h-9"
+               src='https://www.freeiconspng.com/thumbs/travel-icon/travel-guide-icon-map-ticket-travel-icon-17.png'             
+               className="h-9  filter invert"
             />
-            <p className="text-sm/6 text-balance text-gray-400">
+            <p>Tour with US</p>
+            <p className="text-sm/6 text-balance text-gray-100">
               Making the world a better place through constructing elegant
               hierarchies.
             </p>
@@ -107,7 +108,7 @@ export default function Footer() {
                 <a
                   key={item.name}
                   href={item.href}
-                  className="text-gray-400 hover:text-gray-300"
+                  className="text-gray-50 hover:text-gray-100"
                 >
                   <span className="sr-only">{item.name}</span>
                   <item.icon aria-hidden="true" className="size-6" />
@@ -126,7 +127,7 @@ export default function Footer() {
                     <li key={item.name}>
                       <a
                         href={item.href}
-                        className="text-sm/6 text-gray-400 hover:text-gray-300"
+                        className="text-sm/6 text-gray-50 hover:text-gray-100"
                       >
                         {item.name}
                       </a>
@@ -141,7 +142,7 @@ export default function Footer() {
                     <li key={item.name}>
                       <a
                         href={item.href}
-                        className="text-sm/6 text-gray-400 hover:text-gray-300"
+                        className="text-sm/6text-gray-50 hover:text-gray-100"
                       >
                         {item.name}
                       </a>
@@ -158,7 +159,7 @@ export default function Footer() {
                     <li key={item.name}>
                       <a
                         href={item.href}
-                        className="text-sm/6 text-gray-400 hover:text-gray-300"
+                        className="text-sm/6text-gray-50 hover:text-gray-100"
                       >
                         {item.name}
                       </a>
@@ -173,7 +174,7 @@ export default function Footer() {
                     <li key={item.name}>
                       <a
                         href={item.href}
-                        className="text-sm/6 text-gray-400 hover:text-gray-300"
+                        className="text-sm/6 text-gray-50 hover:text-gray-100"
                       >
                         {item.name}
                       </a>
@@ -184,8 +185,8 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className="mt-16 border-t border-white/10 pt-8 sm:mt-20 lg:mt-24">
-          <p className="text-sm/6 text-gray-400">
+        <div className="mt-16 border-t border-white/50 pt-8 sm:mt-20 lg:mt-24">
+          <p className="text-sm/6 text-gray-50">
             &copy; 2024 Your Company, Inc. All rights reserved.
           </p>
         </div>

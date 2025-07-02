@@ -7,6 +7,7 @@ const stats = [
 
 export default function Stats() {
   return (
+    
     <div className="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32 m-5">
       <img
         alt=""
