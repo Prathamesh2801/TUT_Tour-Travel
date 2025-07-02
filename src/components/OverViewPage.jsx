@@ -1,47 +1,35 @@
-import { useParams } from "react-router-dom";
-import  { Detail89 }  from "../Contact/Detail";
+import React from 'react'
 
-export default function ShowItem() {
-  const Showparams = useParams();
-  console.log(Showparams.Detail89ID);
-
-  const travel = Detail89.find((practiceData) => practiceData.id == Showparams.Detail89ID);
-    if (!travel) {
-    return <p>Item not found</p>;
-      console.log(travel);
-
-  }
+export default function OverViewPage() {
   return (
-    <section className="py-8 bg-white md:py-16 dark:bg-gray-900 antialiased">
+    <div>
+          <section className="py-8 bg-white md:py-16 dark:bg-gray-900 antialiased">
       <div className="max-w-screen-xl px-4 mx-auto 2xl:px-0">
         <div className="lg:grid lg:grid-cols-2 lg:gap-8 xl:gap-16">
           <div className="shrink-0 max-w-md lg:max-w-lg mx-auto">
             <img
               className="w-full dark:hidden"
-              src={travel.imageSrc}
-              alt={travel.imageAlt}
+              src={tourItem.imageSrc}
+              alt={tourItem.imageAlt}
             />
             <img
-              className="w-full h-[500px] hidden dark:block"
-              src={travel.imageSrc}
-              alt={travel.imageAlt}
+              className="w-full hidden dark:block"
+              src={tourItem.imageSrc}
+              alt={tourItem.imageAlt}
             />
           </div>
 
           <div className="mt-6 sm:mt-8 lg:mt-0">
             <h1 className="text-xl font-semibold text-gray-900 sm:text-2xl dark:text-white">
-              {travel.name}
+              {tourItem.name}
             </h1>
-
             <div className="mt-4 sm:items-center sm:gap-4 sm:flex">
               <p className="text-2xl font-extrabold text-gray-900 sm:text-3xl dark:text-white">
-                {travel.price}
+                {tourItem.price}
               </p>
 
-
-            </div>
-                                                    <div className="flex items-center gap-2 mt-2 sm:mt-0">
-                <div className="flex my-2 items-center gap-1">
+              <div className="flex items-center gap-2 mt-2 sm:mt-0">
+                <div className="flex items-center gap-1">
                   <svg
                     className="w-4 h-4 text-yellow-300"
                     aria-hidden="true"
@@ -89,16 +77,16 @@ export default function ShowItem() {
                   </svg>
                 </div>
                 <p className="text-sm font-medium leading-none text-gray-500 dark:text-gray-400">
-                  ({travel.rating})
+                  ({tourItem.rating})
                 </p>
                 <a
                   href="#"
                   className="text-sm font-medium leading-none text-gray-900 underline hover:no-underline dark:text-white"
                 >
-                  {travel.reviews} Reviews
+                  {tourItem.reviews} Reviews
                 </a>
               </div>
-
+            </div>
 
             <div className="mt-6 sm:gap-4 sm:items-center sm:flex sm:mt-8">
               <a
@@ -118,8 +106,8 @@ export default function ShowItem() {
                 >
                   <path
                     stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
                     stroke-width="2"
                     d="M12.01 6.001C6.5 1 1 8 5.782 13.001L12.011 20l6.23-7C23 8 17.5 1 12.01 6.002Z"
                   />
@@ -144,8 +132,8 @@ export default function ShowItem() {
                 >
                   <path
                     stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
                     stroke-width="2"
                     d="M4 4h1.5L8 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm.75-3H7.5M11 7H6.312M17 4v6m-3-3h6"
                   />
@@ -157,7 +145,7 @@ export default function ShowItem() {
             <hr className="my-6 md:my-8 border-gray-200 dark:border-gray-800" />
 
             <p className="mb-6 text-gray-500 dark:text-gray-400">
-             {travel.longDescription}
+             {tourItem.longDescription}
             </p>
 
            
@@ -165,5 +153,7 @@ export default function ShowItem() {
         </div>
       </div>
     </section>
-  );
+
+    </div>
+  )
 }

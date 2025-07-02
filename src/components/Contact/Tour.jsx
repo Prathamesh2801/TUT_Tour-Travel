@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import  TourDetail  from "./Practice.js";
 import { Link } from "react-router-dom";
 
-export default function TourSection() {
+export default function PracticeCard() {
   const [selectedCategory, setSelectedCategory] = useState("Adventure");
 
   const filteredTours = TourDetail.filter((TourDetail) => TourDetail.category === selectedCategory);
@@ -36,22 +36,21 @@ export default function TourSection() {
       <h2 className="text-2xl font-bold ">{selectedCategory} Tours</h2>
       
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-0.5">
+      <div className="grid grid-cols-1  justify-center items-center sm:grid-cols-2 md:grid-cols-4 gap-0.5">
         {filteredTours.map((product) => (
-          <div key={product.id} className=" text-black rounded-lg shadow p-4 group relative">
-            <Link to={"/tourDetail/" + product.id}>
+          <div key={product.id} className=" text-black h-[500px] rounded-lg shadow p-4 group relative">
+            <Link to={"/ShowItem/" + product.id}>
               <img
                 src={product.imageSrc}  
                 alt={product.imageAlt}
-                className="h-96 w-full object-cover overflow-hidden rounded group-hover:opacity-75"
+                className="h-[400px] w-[450px] object-cover  rounded group-hover:opacity-75"
               />
                                               <Link
-                to={"/tourDetail/" + product.id}
+                to={"/ShowItem/" + product.id}
                 className="absolute ml-20 mt-2 left-1/2 -translate-x-1/2 bg-orange-500 text-white px-3 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity text-sm"
               >
                 DETAILS
               </Link>
-
             </Link>
             <h3 className="mt-1 text-sm text-white">{product.name}</h3>
             <p className=" text-sm font-medium text-slate-400">{product.price}</p>

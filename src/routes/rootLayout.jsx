@@ -7,7 +7,7 @@ import Testimonials from "../components/Testimonials";
 import Footer from "../components/Footer";
 import TourSection from "../components/Tours/TourSection";
 import TourDetail from "../components/Tours/TourDetail";
-import PracticeCard from "../components/Contact/PracticeCard"
+import Tour from "../components/Contact/Tour"
 import Contact from "../components/Contact/Contact";
 import ShowItem from "../components/Contact/ShowItem";
 
@@ -22,9 +22,8 @@ export default function rootLayout() {
         <Route path="/tours" element={<><TourSection /> </>} />
         <Route path="/tourDetail/:tourID" element={<><TourDetail /></>} />
         <Route path="/contact" element={<><Contact /></>} />
-        <Route path="/practiceCard" element={<><PracticeCard /></>} />
-   <Route path="/ShowItem/:PracticeID" element={<ShowItem />} />
-        <Route path="/tours" element={<> <TourSection /></>}/>
+         <Route path="/Tour" element={<Tour />} />
+         <Route path="/ShowItem/:Detail89ID" element={<ShowItem />} />        <Route path="/tours" element={<> <TourSection /></>}/>
         <Route path="/tourDetail/:tourID"element={ <>  <TourDetail /></> } />
         <Route path="/gallery"element={ <>  <Gallery /></>} />
 
