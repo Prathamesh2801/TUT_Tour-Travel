@@ -47,7 +47,7 @@ export default function Blogsection() {
                 <div className="flex items-center space-x-4">
                   <img
                     className="w-7 h-7 rounded-full"
-                    src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/jese-leos.png"
+                    src={blog.image}
                     alt="Author avatar"
                   />
                   <span className="font-medium dark:text-white">{blog.author}</span>

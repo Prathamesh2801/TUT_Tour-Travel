@@ -37,7 +37,6 @@ export default function rootLayout() {
         <Route path="/tourDetail/:tourID"element={<><TourDetail /></>}/>
         <Route path="/gallery" element={ <><Gallery /></>}/>
         <Route path="/blog" element={<><Blog/></>}/>
-
       </Routes>
       <Footer />
     </BrowserRouter>
