@@ -25,6 +25,7 @@ const navigation = [
   { name: "Home", to: "/" },
   { name: "About", to: "/tours" },
   { name: "Gallery", to: "/gallery" },
+  { name: "Blog", to: "/blog" },
   { name: "Contact us", to: "/contact" },
 ];
 
