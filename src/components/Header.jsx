@@ -7,14 +7,24 @@ import {
   MenuItem,
   MenuItems,
 } from "@headlessui/react";
-import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
+import {
+  Bars3Icon,
+  BellIcon,
+  UserIcon,
+  XMarkIcon,
+} from "@heroicons/react/24/outline";
 
 import { NavLink } from "react-router-dom";
+
+import { gsap } from "gsap";
+import { useRef } from "react";
+import { ScrollTrigger } from "gsap/all";
+import { useGSAP } from "@gsap/react";
 
 const navigation = [
   { name: "Home", to: "/", current: true },
 
- { name: "Tour", to: "/Tour", current: false },
+ { name: "About", to: "/tours", current: false },
   { name: "Gallery", to: "/gallery", current: false },
   { name: "Contact us", to: "/contact", current: false },
   
@@ -26,8 +36,44 @@ function classNames(...classes) {
 }
 
 export default function Header() {
+  const navRef = useRef(null);
+  useGSAP(() => {
+    ScrollTrigger.create({
+      trigger: navRef.current,
+      start: "top top",
+      end: "bottom top+=1",
+      onEnter: () => {
+        // tween into glass
+        gsap.to(navRef.current, {
+          backgroundColor: "rgba(255,165,0,0.3)", // thin orange
+          backdropFilter: "blur(10px)",
+          position: "fixed",
+          top: 0,
+          zIndex: 500,
+          duration: 0.5,
+          ease: "power2.out",
+        });
+      },
+      onLeaveBack: () => {
+        // tween back to solid
+        gsap.to(navRef.current, {
+          backgroundColor: "#f97316", // tailwind orange-400
+          backdropFilter: "blur(0px)",
+          position: "relative",
+          zIndex: 0,
+          duration: 0.5,
+          ease: "power2.out",
+        });
+      },
+    });
+  }, []);
+
   return (
-    <Disclosure as="nav" className="bg-orange-400 ">
+    <Disclosure
+      as="nav"
+      ref={navRef}
+      className="w-full bg-orange-400 transition-none"
+    >
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         <div className="relative flex h-16 items-center justify-between">
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -47,7 +93,10 @@ export default function Header() {
           </div>
           <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
             <div className="flex shrink-0 items-center">
-              <img src='https://www.freeiconspng.com/thumbs/travel-icon/travel-guide-icon-map-ticket-travel-icon-17.png' className='h-10 my-auto w-10 filter invert'></img>
+              <img
+                src="https://www.freeiconspng.com/thumbs/travel-icon/travel-guide-icon-map-ticket-travel-icon-17.png"
+                className="h-10 my-auto w-10 filter invert"
+              ></img>
             </div>
             <div className="hidden sm:ml-6 sm:block">
               <div className="flex space-x-4">
@@ -55,13 +104,14 @@ export default function Header() {
                   <NavLink
                     key={item.name}
                     to={item.to}
-                    aria-current={item.current ? "page" : undefined}
-                    className={classNames(
-                      item.current
-                        ? " hover:bg-gray-700 text-white"
-                        : "text-gray-10 hover:bg-gray-100 hover:text-white",
-                      "rounded-md px-3 py-2 text-sm font-medium"
-                    )}
+                    className={({ isActive }) =>
+                      classNames(
+                        isActive
+                          ? "bg-gray-900 text-white"
+                          : "text-gray-50 hover:bg-gray-700 hover:text-white",
+                        "rounded-md px-3 py-2 text-sm font-medium"
+                      )
+                    }
                   >
                     {item.name}
                   </NavLink>
@@ -85,11 +135,9 @@ export default function Header() {
                 <MenuButton className="relative flex rounded-full bg-gray-800 text-sm focus:outline-hidden focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-gray-800">
                   <span className="absolute -inset-1.5" />
                   <span className="sr-only">Open user menu</span>
-                  <img
-                    alt=""
-                    src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                    className="size-8 rounded-full"
-                  />
+                  <span className="inline-flex size-10 border border-white items-center justify-center rounded-full bg-gray-500">
+                    <span className="text-xs font-medium text-white">CY</span>
+                  </span>
                 </MenuButton>
               </div>
               <MenuItems
@@ -129,19 +177,21 @@ export default function Header() {
       <DisclosurePanel className="sm:hidden">
         <div className="space-y-1 px-2 pt-2 pb-3">
           {navigation.map((item) => (
-            <NavLink
+            <DisclosureButton
               key={item.name}
+              as={NavLink}
               to={item.to}
-              aria-current={item.current ? "page" : undefined}
-              className={classNames(
-                item.current
-                  ? "bg-gray-900 text-white"
-                  : "text-gray-300 hover:bg-gray-700 hover:text-white",
-                "block rounded-md px-3 py-2 text-base font-medium"
-              )}
+              className={({ isActive }) =>
+                classNames(
+                  isActive
+                    ? "bg-gray-900 text-white"
+                    : "text-gray-300 hover:bg-gray-700 hover:text-white",
+                  "block rounded-md px-3 py-2 text-base font-medium"
+                )
+              }
             >
               {item.name}
-            </NavLink>
+            </DisclosureButton>
           ))}
         </div>
       </DisclosurePanel>
