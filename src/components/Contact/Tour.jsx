@@ -22,15 +22,7 @@ export default function PracticeCard() {
           </button>
         ))}
       </div>
-      {/* <div className="max-auto  ">
-          <a
-            href="#"
-            className="hidden text-sm  font-medium text-orange-400 hover:text-indigo-500 md:block"
-          >
-            Shop the collection
-            <span aria-hidden="true"> &rarr;</span>
-          </a>
-           </div> */}
+
             <div className="mx-auto max-w-2xl px-4 py-6 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
 
       <h2 className="text-2xl font-bold ">{selectedCategory} Tours</h2>
@@ -45,7 +37,7 @@ export default function PracticeCard() {
                 alt={product.imageAlt}
                 className="h-[400px] w-[450px] object-cover  rounded group-hover:opacity-75"
               />
-                                              <Link
+                         <Link
                 to={"/ShowItem/" + product.id}
                 className="absolute ml-20 mt-2 left-1/2 -translate-x-1/2 bg-orange-500 text-white px-3 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity text-sm"
               >

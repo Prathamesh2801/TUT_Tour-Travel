@@ -12,6 +12,7 @@ import Contact from "../components/Contact/Contact";
 import ShowItem from "../components/Contact/ShowItem";
 
 import Gallery from "../components/Gallery";
+import Hero23 from "../components/Hero23";
 
 export default function rootLayout() {
   return (
@@ -26,7 +27,7 @@ export default function rootLayout() {
          <Route path="/ShowItem/:Detail89ID" element={<ShowItem />} />        <Route path="/tours" element={<> <TourSection /></>}/>
         <Route path="/tourDetail/:tourID"element={ <>  <TourDetail /></> } />
         <Route path="/gallery"element={ <>  <Gallery /></>} />
-
+        <Route path="/hero23"element={ <>  <Hero23 /></>} />
       </Routes>
       <Footer />
     </BrowserRouter>

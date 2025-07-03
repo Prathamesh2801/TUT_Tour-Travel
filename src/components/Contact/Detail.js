@@ -130,9 +130,9 @@ export const Detail89 = [
   },
   {
     id: 11,
-    name: "Majestic Mountain",
-    imageSrc: "https://static.wixstatic.com/media/2eb27c_4f50cca22c45422cb796793fa5f08e5d~mv2.jpg/v1/fill/w_1175,h_784,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/2eb27c_4f50cca22c45422cb796793fa5f08e5d~mv2.jpg",
-    price: "₹2399",
+    name: "Macau",
+    imageSrc: "https://hblimg.mmtcdn.com/content/hubble/img/macau/mmt/destination/m_Macau_activity_heritage_l_691_1040.jpg",
+        price: "₹2399",
     longDescription:
       "Dive into the turquoise waters of the Andaman Islands, visit Radhanagar Beach, explore coral reefs, and witness rich marine life. A thrilling 5-day island adventure awaits.",
     rating: 4.6,
@@ -142,11 +142,10 @@ export const Detail89 = [
   },
   {
     id: 12,
-    name: " Phugtal Monastery",
-    imageSrc: "https://img.invinciblengo.org/iconscout/f:jpeg/w:600/h:0/rt:fit/plain/https://invincible.s3.wasabisys.com/schedule/e88a0c55-4155-490b-936a-cb370b3ccb0a",
+    name: "Manali",
+    imageSrc: "https://hblimg.mmtcdn.com/content/hubble/img/destimg/mmt/destination/t_ufs/m_Manali_main_tv_destination_img_1_l_1021_1529.jpg",
     price: "₹4299",
-    longDescription:
-      "Dive into the turquoise waters of the Andaman Islands, visit Radhanagar Beach, explore coral reefs, and witness rich marine life. A thrilling 5-day island adventure awaits.",
+    longDescription:"The views of the Himalayas surround Manali,o sightseeing. If snow is something you The experience depends on when you visit Manali. March to June is the perfect time for you to visit Manali and go sightseeing. If snow is something you like, then October to February will be a better time for a mountainous visit. It gives proper skiing and snowboarding experience.like, then October to February will be a better time for a mountainous visit. It gives proper skiing and snowboarding experience.",
     rating: 4.4,
     reviews: 9092,
 
@@ -157,8 +156,7 @@ export const Detail89 = [
     name: " Munnar",
     imageSrc: "https://img.invinciblengo.org/iconscout/f:jpeg/w:600/h:0/rt:fit/plain/https://invincible.s3.wasabisys.com/schedule/e88a0c55-4155-490b-936a-cb370b3ccb0a",
     price: "₹4565",
-    longDescription:
-      "Dive into the turquoise waters of the Andaman Islands, visit Radhanagar Beach, explore coral reefs, and witness rich marine life. A thrilling 5-day island adventure awaits.",
+    longDescription:"The views of the Himalayas surround Manali,o sightseeing. If snow is something you The experience depends on when you visit Manali. March to June is the perfect time for you to visit Manali and go sightseeing. If snow is something you like, then October to February will be a better time for a mountainous visit. It gives proper skiing and snowboarding experience.like, then October to February will be a better time for a mountainous visit. It gives proper skiing and snowboarding experience.",
     rating: 3.9,
     reviews: 2435,
 
@@ -178,8 +176,8 @@ export const Detail89 = [
   },
   {
     id: 15,
-    name: "Majestic Goa Getaway",
-    imageSrc: "https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_742,h_1024/https://blog.unimonitravel.com/wp-content/uploads/2024/10/ADV-MID-742x1024.webp",
+    name: "Dehradun",
+    imageSrc: "https://hblimg.mmtcdn.com/content/hubble/img/desttvimg/mmt/destination/t_ufs/m_Dehradun_tv_destination_img_4_l_738_1108.jpg",
     price: "₹7886",
     longDescription:
       "Dive into the turquoise waters of the Andaman Islands, visit Radhanagar Beach, explore coral reefs, and witness rich marine life. A thrilling 5-day island adventure awaits.",
@@ -200,11 +198,9 @@ export const Detail89 = [
 
   {
     id: 16,
-    name: "Majestic Goa Getaway",
-    imageSrc: "https://media.istockphoto.com/id/1511069617/photo/women-hikers-embracing-the-untamed-beauty-of-tasmania-through-exhilarating-bushwalking.jpg?s=612x612&w=0&k=20&c=T8sDlMsvby3usWMjkdvQobeMycD0YkwyreeRF9VFWE8=",
-    price: "₹7299",
-    longDescription:
-      "Dive into the turquoise waters of the Andaman Islands, visit Radhanagar Beach, explore coral reefs, and witness rich marine life. A thrilling 5-day island adventure awaits.",
+    name: "Goa ",
+    imageSrc: "https://hblimg.mmtcdn.com/content/hubble/img/destimg/mmt/destination/t_trp/m_goa_main_tv_destination_img_1_l_759_1138.jpg?im=Resize=(480,480)",
+    longDescription:"Discover a new city through a food tour. Food tour's are the easiest way to take a tour, learn about the local delicacies, and the best of all, get great tips that aren't just local tips for tourists, but sometimes, lessons for a lifetime toose Public Transportation. When you are in a new city, you can possibly see places and people that you wouldnt normally see when simply walking to the places that checks your list. Some buses or rails take you to parts of the city you wouldnt get to see otherwise. Whilst using public transportation, just ensure that you are following the local norms and do remember to watch the locals!",
     rating: 4.9,
     reviews: 1262,
 
@@ -212,11 +208,10 @@ export const Detail89 = [
   },
   {
     id: 17,
-    name: "Oeschinensee",
-    imageSrc: "https://media.istockphoto.com/id/517599616/photo/panorama-view-of-oeschinensee-on-bernese-oberla.jpg?s=612x612&w=0&k=20&c=PkX0ebgjcsBK4_dnDGClLGspqI4bUZqGB-qUyBnoyIo=",
+    name: "Pondicherry",
+    imageSrc: "https://hblimg.mmtcdn.com/content/hubble/img/pondicherry/mmt/destination/m_Pondicherry_activity_beach_l_382_691.jpg",
     price: "₹4589",
-    longDescription:
-      "Dive into the turquoise waters of the Andaman Islands, visit Radhanagar Beach, explore coral reefs, and witness rich marine life. A thrilling 5-day island adventure awaits.",
+    longDescription:" Pondicherry rough a food tour. Food tour' Discover a new city ths are the easiest way to take a tour, learn about the local delicacies, and the best of all, get great tips that aren't just local tips for tourists, but sometimes, lessons for a lifetime toose Public Transportation. When you are in a new city, you can possibly see places and people that you wouldnt normally see when simply walking to the places that checks your list. Some buses or rails take you to parts of the city you wouldnt get to see otherwise. Whilst using public transportation, just ensure that you are following the local norms and do remember to watch the locals!",
     rating: 3.9,
     reviews: 17962,
 
@@ -224,11 +219,10 @@ export const Detail89 = [
   },
  {
     id: 18,
-    name: "serpentine road",
-    imageSrc: "https://media.istockphoto.com/id/1822247032/photo/aerial-view-of-serpentine-road-in-swiss-alps-in-autumn.jpg?s=612x612&w=0&k=20&c=NCL-I5tlWaQ1HDnTGxIHgtvxDvbXlEgS_YUfC0-TxFc=",
+    name: "Promenade",
+    imageSrc: "https://hblimg.mmtcdn.com/content/hubble/img/pondicherry/mmt/activities/t_ufs/m_activities-pondicherry-promenade-beach_l_400_640.jpg",
     price: "₹7299",
-    longDescription:
-      "Dive into the turquoise waters of the Andaman Islands, visit Radhanagar Beach, explore coral reefs, and witness rich marine life. A thrilling 5-day island adventure awaits.",
+    longDescription:"Promenade, has long been considered the dream destination of many. And you'll simply be aghast by the beauty. Not only does this place have a rich cultural heritage, but also a fabulous nightlife that eagerly appeals to tourists.Starting from serene beaches to sacred temples, this offers a thrilling opportunity for travellers. Bali offers a stunning experience for everyone, so let us see more about the place.",
     rating: 4.9,
     reviews: 1262,
 
@@ -236,11 +230,10 @@ export const Detail89 = [
   },
  {
     id: 19,
-    name: "Naggar Village",
-    imageSrc: "https://img.invinciblengo.org/iconscout/f:jpeg/w:800/h:0/rt:fit/plain/https://invincible.s3.wasabisys.com/attraction/53e7d28e-6e07-471c-a503-a251d6444194",
+    name: "  phuket",
+    imageSrc: "https://hblimg.mmtcdn.com/content/hubble/img/desttvimg/mmt/destination/t_ufs/m_Phuket_tv_destination_img_1_l_629_1005.jpg",
     price: "₹7299",
-    longDescription:
-      "Dive into the turquoise waters of the Andaman Islands, visit Radhanagar Beach, explore coral reefs, and witness rich marine life. A thrilling 5-day island adventure awaits.",
+    longDescription:"phuket, has long been considered the dream destination of many. And you'll simply be aghast by the beauty. Not only does this place have a rich cultural heritage, but also a fabulous nightlife that eagerly appeals to tourists.Starting from serene beaches to sacred temples, this offers a thrilling opportunity for travellers. Bali offers a stunning experience for everyone, so let us see more about the place.",
     rating: 4.9,
     reviews: 1262,
 
@@ -248,11 +241,10 @@ export const Detail89 = [
   },
  {
     id: 20,
-    name: "Naggar Village",
-    imageSrc: "https://img.invinciblengo.org/iconscout/f:jpeg/w:800/h:0/rt:fit/plain/https://invincible.s3.wasabisys.com/attraction/53e7d28e-6e07-471c-a503-a251d6444194",
+    name: " pattay",
+    imageSrc: "https://hblimg.mmtcdn.com/content/hubble/img/desttvimg/mmt/destination/t_ufs/m_pattaya_tv_destination_img_1_l_803_1206.jpg",
     price: "₹7299",
-    longDescription:
-      "Dive into the turquoise waters of the Andaman Islands, visit Radhanagar Beach, explore coral reefs, and witness rich marine life. A thrilling 5-day island adventure awaits.",
+    longDescription:"pattay, has long been considered the dream destination of many. And you'll simply be aghast by the beauty. Not only does this place have a rich cultural heritage, but also a fabulous nightlife that eagerly appeals to tourists.Starting from serene beaches to sacred temples, this offers a thrilling opportunity for travellers. Bali offers a stunning experience for everyone, so let us see more about the place.",
     rating: 4.9,
     reviews: 1262,
 
@@ -260,11 +252,10 @@ export const Detail89 = [
   },
  {
     id: 21,
-    name: "Naggar Village",
-    imageSrc: "https://img.invinciblengo.org/iconscout/f:jpeg/w:800/h:0/rt:fit/plain/https://invincible.s3.wasabisys.com/attraction/53e7d28e-6e07-471c-a503-a251d6444194",
+    name: "Havelock",
+    imageSrc: "https://hblimg.mmtcdn.com/content/hubble/img/destimg/mmt/destination/t_ufs/m_havelock_tv_destination_img_1_l_813_1446.jpg",
     price: "₹7299",
-    longDescription:
-      "Dive into the turquoise waters of the Andaman Islands, visit Radhanagar Beach, explore coral reefs, and witness rich marine life. A thrilling 5-day island adventure awaits.",
+    longDescription:"Havelock, has long been considered the dream destination of many. And you'll simply be aghast by the beauty. Not only does this place have a rich cultural heritage, but also a fabulous nightlife that eagerly appeals to tourists.Starting from serene beaches to sacred temples, this offers a thrilling opportunity for travellers. Bali offers a stunning experience for everyone, so let us see more about the place.",
     rating: 4.9,
     reviews: 1262,
 
@@ -272,11 +263,10 @@ export const Detail89 = [
   },
  {
     id: 22,
-    name: "Naggar Village",
-    imageSrc: "https://img.invinciblengo.org/iconscout/f:jpeg/w:800/h:0/rt:fit/plain/https://invincible.s3.wasabisys.com/attraction/53e7d28e-6e07-471c-a503-a251d6444194",
+    name: "Digha",
+    imageSrc: "https://hblimg.mmtcdn.com/content/hubble/img/desttvimg/mmt/destination/t_ufs/m_Digha_tv_destination_img_1_l_821_1321.jpg",
     price: "₹7299",
-    longDescription:
-      "Dive into the turquoise waters of the Andaman Islands, visit Radhanagar Beach, explore coral reefs, and witness rich marine life. A thrilling 5-day island adventure awaits.",
+    longDescription:"Digha, has long been considered the dream destination of many. And you'll simply be aghast by the beauty. Not only does this place have a rich cultural heritage, but also a fabulous nightlife that eagerly appeals to tourists.Starting from serene beaches to sacred temples, this offers a thrilling opportunity for travellers. Bali offers a stunning experience for everyone, so let us see more about the place.",
     rating: 4.9,
     reviews: 1262,
 
@@ -284,11 +274,10 @@ export const Detail89 = [
   },
  {
     id: 23,
-    name: "Naggar Village",
-    imageSrc: "https://img.invinciblengo.org/iconscout/f:jpeg/w:800/h:0/rt:fit/plain/https://invincible.s3.wasabisys.com/attraction/53e7d28e-6e07-471c-a503-a251d6444194",
+    name: "Bali",
+    imageSrc: "https://hblimg.mmtcdn.com/content/hubble/img/desttvimg/mmt/destination/t_ufs/m_Bali_tv_destination_img_1_l_771_1158.jpg",
     price: "₹7299",
-    longDescription:
-      "Dive into the turquoise waters of the Andaman Islands, visit Radhanagar Beach, explore coral reefs, and witness rich marine life. A thrilling 5-day island adventure awaits.",
+    longDescription:"Bali Indonesia, has long been considered the dream destination of many. And you'll simply be aghast by the beauty. Not only does this place have a rich cultural heritage, but also a fabulous nightlife that eagerly appeals to tourists.Starting from serene beaches to sacred temples, this offers a thrilling opportunity for travellers. Bali offers a stunning experience for everyone, so let us see more about the place.",
     rating: 4.9,
     reviews: 1262,
 
@@ -299,8 +288,7 @@ export const Detail89 = [
     name: "Naggar Village",
     imageSrc: "https://img.invinciblengo.org/iconscout/f:jpeg/w:800/h:0/rt:fit/plain/https://invincible.s3.wasabisys.com/attraction/53e7d28e-6e07-471c-a503-a251d6444194",
     price: "₹7299",
-    longDescription:
-      "Dive into the turquoise waters of the Andaman Islands, visit Radhanagar Beach, explore coral reefs, and witness rich marine life. A thrilling 5-day island adventure awaits.",
+    longDescription:"Bali Indonesia, has long been considered the dream destination of many. And you'll simply be aghast by the beauty. Not only does this place have a rich cultural heritage, but also a fabulous nightlife that eagerly appeals to tourists.Starting from serene beaches to sacred temples, this offers a thrilling opportunity for travellers. Bali offers a stunning experience for everyone, so let us see more about the place.",
     rating: 4.9,
     reviews: 1262,
 
@@ -317,78 +305,71 @@ export const Detail89 = [
 
 
   }, {
-    id: 24,
-    name: "Naggar Village",
-    imageSrc: "https://img.invinciblengo.org/iconscout/f:jpeg/w:800/h:0/rt:fit/plain/https://invincible.s3.wasabisys.com/attraction/53e7d28e-6e07-471c-a503-a251d6444194",
+    id: 26,
+    name: "Red Fort",
+    imageSrc: "https://hblimg.mmtcdn.com/content/hubble/img/delhi/mmt/activities/m_activities_delhi_red_fort_l_341_817.jpg",
     price: "₹7299",
-    longDescription:
-      "Dive into the turquoise waters of the Andaman Islands, visit Radhanagar Beach, explore coral reefs, and witness rich marine life. A thrilling 5-day island adventure awaits.",
+    longDescription:" The Taj Mahal is an ivory-white marble mausoleum situated right on the banks of the Yamuna River in Agra, Uttar Pradesh. It is listed as one of the Seven Wonders of the World due to its exceptional architectural beauty. This monument is designed with a blend of Persian, Ottoman, Turkish, and Indian architectural styles. Moreover, the intricate carvings, floral motifs",
     rating: 4.9,
     reviews: 1262,
 
 
   }, {
-    id: 24,
-    name: "Naggar Village",
-    imageSrc: "https://img.invinciblengo.org/iconscout/f:jpeg/w:800/h:0/rt:fit/plain/https://invincible.s3.wasabisys.com/attraction/53e7d28e-6e07-471c-a503-a251d6444194",
+    id: 27,
+    name: "Golden Temple",
+    imageSrc: "https://hblimg.mmtcdn.com/content/hubble/img/amritsar/mmt/activities/m_activities_amritsar_golden_temple_l_427_639.jpg",
     price: "₹7299",
-    longDescription:
-      "Dive into the turquoise waters of the Andaman Islands, visit Radhanagar Beach, explore coral reefs, and witness rich marine life. A thrilling 5-day island adventure awaits.",
+    longDescription:" The Taj Mahal is an ivory-white marble mausoleum situated right on the banks of the Yamuna River in Agra, Uttar Pradesh. It is listed as one of the Seven Wonders of the World due to its exceptional architectural beauty. This monument is designed with a blend of Persian, Ottoman, Turkish, and Indian architectural styles. Moreover, the intricate carvings, floral motifs",
     rating: 4.9,
     reviews: 1262,
 
 
   }, {
-    id: 24,
-    name: "Naggar Village",
-    imageSrc: "https://img.invinciblengo.org/iconscout/f:jpeg/w:800/h:0/rt:fit/plain/https://invincible.s3.wasabisys.com/attraction/53e7d28e-6e07-471c-a503-a251d6444194",
+    id: 28,
+    name: " Humayun's Tomb",
+    imageSrc: "https://hblimg.mmtcdn.com/content/hubble/img/delhi/mmt/activities/m_activities_delhi_humayun_s_tomb_l_435_653.jpg",
     price: "₹7299",
-    longDescription:
-      "Dive into the turquoise waters of the Andaman Islands, visit Radhanagar Beach, explore coral reefs, and witness rich marine life. A thrilling 5-day island adventure awaits.",
+    longDescription:" The Taj Mahal is an ivory-white marble mausoleum situated right on the banks of the Yamuna River in Agra, Uttar Pradesh. It is listed as one of the Seven Wonders of the World due to its exceptional architectural beauty. This monument is designed with a blend of Persian, Ottoman, Turkish, and Indian architectural styles. Moreover, the intricate carvings, floral motifs",
     rating: 4.9,
     reviews: 1262,
 
 
   }, {
-    id: 24,
-    name: "Naggar Village",
-    imageSrc: "https://img.invinciblengo.org/iconscout/f:jpeg/w:800/h:0/rt:fit/plain/https://invincible.s3.wasabisys.com/attraction/53e7d28e-6e07-471c-a503-a251d6444194",
+    id: 29,
+    name: "India Gate",
+    imageSrc: "https://hblimg.mmtcdn.com/content/hubble/img/delhi/mmt/activities/m_activities_delhi_india_gate_1_l_442_663.jpg",
     price: "₹7299",
-    longDescription:
-      "Dive into the turquoise waters of the Andaman Islands, visit Radhanagar Beach, explore coral reefs, and witness rich marine life. A thrilling 5-day island adventure awaits.",
+    longDescription:" The Taj Mahal is an ivory-white marble mausoleum situated right on the banks of the Yamuna River in Agra, Uttar Pradesh. It is listed as one of the Seven Wonders of the World due to its exceptional architectural beauty. This monument is designed with a blend of Persian, Ottoman, Turkish, and Indian architectural styles. Moreover, the intricate carvings, floral motifs",
     rating: 4.9,
     reviews: 1262,
 
 
   }, {
-    id: 24,
-    name: "Naggar Village",
-    imageSrc: "https://img.invinciblengo.org/iconscout/f:jpeg/w:800/h:0/rt:fit/plain/https://invincible.s3.wasabisys.com/attraction/53e7d28e-6e07-471c-a503-a251d6444194",
+    id: 30,
+    name: "Augada Fort",
+    imageSrc: "https://hblimg.mmtcdn.com/content/hubble/img/goa/mmt/activities/m_Fort%20Aguada_6_l_436_654.jpg",
     price: "₹7299",
-    longDescription:
-      "Dive into the turquoise waters of the Andaman Islands, visit Radhanagar Beach, explore coral reefs, and witness rich marine life. A thrilling 5-day island adventure awaits.",
+    longDescription:" The Taj Mahal is an ivory-white marble mausoleum situated right on the banks of the Yamuna River in Agra, Uttar Pradesh. It is listed as one of the Seven Wonders of the World due to its exceptional architectural beauty. This monument is designed with a blend of Persian, Ottoman, Turkish, and Indian architectural styles. Moreover, the intricate carvings, floral motifs",
     rating: 4.9,
     reviews: 1262,
 
 
   }, {
-    id: 24,
-    name: "Naggar Village",
-    imageSrc: "https://img.invinciblengo.org/iconscout/f:jpeg/w:800/h:0/rt:fit/plain/https://invincible.s3.wasabisys.com/attraction/53e7d28e-6e07-471c-a503-a251d6444194",
+    id: 31,
+    name: "State of Unity",
+    imageSrc: "https://hblimg.mmtcdn.com/content/hubble/img/vadodara/mmt/activities/m_activities_vadodara_statue_of_unity_l_405_810.jpg",
     price: "₹7299",
-    longDescription:
-      "Dive into the turquoise waters of the Andaman Islands, visit Radhanagar Beach, explore coral reefs, and witness rich marine life. A thrilling 5-day island adventure awaits.",
+    longDescription:" The Taj Mahal is an ivory-white marble mausoleum situated right on the banks of the Yamuna River in Agra, Uttar Pradesh. It is listed as one of the Seven Wonders of the World due to its exceptional architectural beauty. This monument is designed with a blend of Persian, Ottoman, Turkish, and Indian architectural styles. Moreover, the intricate carvings, floral motifs",
     rating: 4.9,
     reviews: 1262,
 
 
   }, {
-    id: 24,
-    name: "Naggar Village",
-    imageSrc: "https://img.invinciblengo.org/iconscout/f:jpeg/w:800/h:0/rt:fit/plain/https://invincible.s3.wasabisys.com/attraction/53e7d28e-6e07-471c-a503-a251d6444194",
+    id: 32,
+    name: "Mysore palace",
+    imageSrc: "https://hblimg.mmtcdn.com/content/hubble/img/mysore/mmt/activities/m_activities_Mysore_Mysore%20Palace_l_386_579.jpg",
     price: "₹7299",
-    longDescription:
-      "Dive into the turquoise waters of the Andaman Islands, visit Radhanagar Beach, explore coral reefs, and witness rich marine life. A thrilling 5-day island adventure awaits.",
+    longDescription:" The Taj Mahal is an ivory-white marble mausoleum situated right on the banks of the Yamuna River in Agra, Uttar Pradesh. It is listed as one of the Seven Wonders of the World due to its exceptional architectural beauty. This monument is designed with a blend of Persian, Ottoman, Turkish, and Indian architectural styles. Moreover, the intricate carvings, floral motifs",
     rating: 4.9,
     reviews: 1262,
 
