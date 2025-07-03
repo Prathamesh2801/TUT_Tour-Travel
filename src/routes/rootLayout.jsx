@@ -11,6 +11,8 @@ import Tour from "../components/Contact/Tour"
 import Contact from "../components/Contact/Contact";
 import ShowItem from "../components/Contact/ShowItem";
 
+// import Blog from "../components/Blog/Blogsection";
+import Blog from "../components/Blogs/Blogsection";
 import Gallery from "../components/Gallery";
 import Hero23 from "../components/Hero23";
 
@@ -28,6 +30,25 @@ export default function rootLayout() {
         <Route path="/tourDetail/:tourID"element={ <>  <TourDetail /></> } />
         <Route path="/gallery"element={ <>  <Gallery /></>} />
         <Route path="/hero23"element={ <>  <Hero23 /></>} />
+        <Route
+          path="/"
+          element={
+            <>
+              <Hero />
+              <Stats />
+              <Teams />
+              <Testimonials />
+            </>
+          }
+        />
+
+        <Route path="/tours" element={<><TourSection /> </>} />
+        {/* <Route path="/tourDetail/:tourID" element={<><TourDetail /></>} /> */}
+        <Route path="/contact" element={<><Contact /></>} />
+        {/* <Route path="/tours"element={<><TourSection /></>}/> */}
+        <Route path="/tourDetail/:tourID"element={<><TourDetail /></>}/>
+        <Route path="/gallery" element={ <><Gallery /></>}/>
+        <Route path="/blog" element={<><Blog/></>}/>
       </Routes>
       <Footer />
     </BrowserRouter>
