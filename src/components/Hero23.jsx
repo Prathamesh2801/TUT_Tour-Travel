@@ -1,10 +1,13 @@
 import React from 'react'
 import MainD from "./MainD"
+import Hero2 from "./Blogs/Hero2"
 
 export default function Hero23() {
   return (
-      <div className='flex '>
-           <div className='w-[500px] h-[700px] m-4 '>
+    <div>
+      <div className='flex 
+ '>
+           <div className='w-[500px] h-[700px] m-4  '>
           <MainD/>
         </div>
         <div className='flex flex-col '>
@@ -17,7 +20,7 @@ export default function Hero23() {
           </div>
            </div>
           <div className='flex w-[1100px] h-[300px]   '>
-               <div className='w-[70%] h-[80%] m-4 rounded-md  border border-red-400' >
+               <div className='w-[70%] h-[80%] m-4 rounded-md  border' >
                 <img className="w-96 h-60" src='https://hblimg.mmtcdn.com/content/hubble/img/leh/mmt/destination/m_leh-landscape_l_400_640.jpg'></img>
                 
                </div>
@@ -33,6 +36,10 @@ export default function Hero23() {
           </div>
         </div>
       </div>
+              <Hero2/>
+
+      </div>
+      
     
   )
 }

@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react';
 // Slide data: each slide has a title and an image URL
 const slides = [
   {
-    title: "Welcome to Nature",
+    title: "Trekking Tour",
     img: "/src/assets/carousel/i1.jpg",
   },
   {
@@ -30,7 +30,7 @@ const Carousel = () => {
   }, []);
 
   return (
-    <div className="relative w-full h-[700px] overflow-hidden">
+    <div className="relative w-full h-[640px] overflow-hidden">
       {slides.map((slide, index) => (
         <div
           key={index}

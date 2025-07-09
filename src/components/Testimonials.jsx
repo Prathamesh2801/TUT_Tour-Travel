@@ -1,5 +1,9 @@
 export default function Testimonials() {
   return (
+    <div>
+      <div className="bg-gray-900 ml-20">
+    <p className="bg-gray-900 text-5xl font-bold ">PEOPLE'S THOUGHTS</p>
+    <p className="bg-gray-900  tracking-[8px] m-3">What People Say About Us</p></div>
     <section className="bg-gray-900 py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto grid max-w-2xl grid-cols-1 lg:mx-0 lg:max-w-none lg:grid-cols-2">
@@ -65,5 +69,6 @@ export default function Testimonials() {
         </div>
       </div>
     </section>
+    </div>
   );
 }
