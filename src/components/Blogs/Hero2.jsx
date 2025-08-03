@@ -2,16 +2,16 @@ import React from 'react'
 
 export default function hero2() {
   return (
-    <div>
-      <div className='grid m-10 grid-flow-col grid-rows-3   gap-10'>
+    <div className='bg-gray-900'>
+      <div className='grid  grid-flow-col  grid-rows-3   gap-10'>
   <div className=' py-12 flex justify-center row-start-1 row-end-3'>
-          <img className='h-[700px]' src='https://images.pexels.com/photos/32778037/pexels-photo-32778037.jpeg'></img></div>     
+          <img className='' src='https://images.pexels.com/photos/32778037/pexels-photo-32778037.jpeg'></img></div>     
   <div className=' flex justify-center row-start-3 row-end-5'>
-          <img className='h-[600px]' src='https://images.pexels.com/photos/12910823/pexels-photo-12910823.jpeg'></img></div>
+          <img className='' src='https://images.pexels.com/photos/12910823/pexels-photo-12910823.jpeg'></img></div>
   <div className='flex justify-center row-start-2 row-end-4'>
-                    <img className='h-[700px] rounded-md' src='https://images.pexels.com/photos/16785434/pexels-photo-16785434.png'></img></div>
+                    <img className='rounded-md' src='https://images.pexels.com/photos/16785434/pexels-photo-16785434.png'></img></div>
   <div className=''>
-            <img className='h-[350px] w-[550px] object-cover rounded-md' src ='https://www.tourmyindia.com/golden-triangle/golden-images/tour-package/jaipur1-popular.webp'></img>
+            <img className=' object-cover rounded-md' src ='https://www.tourmyindia.com/golden-triangle/golden-images/tour-package/jaipur1-popular.webp'></img>
           </div>
           
   <div className='flex flex-col justify-center col-start-4 col-end-2'>
@@ -29,8 +29,17 @@ export default function hero2() {
         </div>
         
         <div className='row-start-4 row-end-2'>
-          <img className='h-[700px] w-[400px] rounded-md' src="https://www.tourmyindia.com/golden-triangle/golden-images/markha-adventure.webp"></img>
+          <img className=' rounded-md' src="https://www.tourmyindia.com/golden-triangle/golden-images/markha-adventure.webp"></img>
         </div>
+        
+                <div className='row-col-3 row-col-1'>
+          <img className=' rounded-md' src="https://www.tourmyindia.com/golden-triangle/golden-images/markha-adventure.webp"></img>
+        </div>
+                        <div className='row-col-3 row-col-3'>
+          <img className=' rounded-md' src="https://www.tourmyindia.com/golden-triangle/golden-images/markha-adventure.webp"></img>
+        </div>
+
+
 
       </div>
     </div>

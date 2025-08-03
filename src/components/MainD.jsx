@@ -30,7 +30,7 @@ const Carousel = () => {
   }, []);
 
   return (
-    <div className="relative w-full h-[640px] overflow-hidden">
+    <div className="relative w-[500px] h-[580px] overflow-hidden">
       {slides.map((slide, index) => (
         <div
           key={index}
