@@ -1,3 +1,7 @@
+import { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+import Login from "./Login";
+
 import {
   Disclosure,
   DisclosureButton,
@@ -22,11 +26,13 @@ import { ScrollTrigger } from "gsap/all";
 import { useGSAP } from "@gsap/react";
 
 const navigation = [
-  { name: "Home", to: "/" },
-  { name: "About", to: "/tours" },
-  { name: "Gallery", to: "/gallery" },
-  { name: "Blog", to: "/blog" },
-  { name: "Contact us", to: "/contact" },
+  { name: "Home", to: "/", current: true },
+
+ { name: "Tour", to: "/Tour", current: false },
+  { name: "Gallery", to: "/gallery", current: false },
+  { name: "Contact us", to: "/contact", current: false },
+  
+
 ];
 
 function classNames(...classes) {
@@ -65,6 +71,11 @@ export default function Header() {
       },
     });
   }, []);
+
+  const navigate = useNavigate();
+  const handleClick = () => {
+    navigate('/login'); 
+  };
 
   return (
     <Disclosure
@@ -112,63 +123,15 @@ export default function Header() {
                     }
                   >
                     {item.name}
+                    
                   </NavLink>
                 ))}
               </div>
             </div>
           </div>
-          <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-            <button
-              type="button"
-              className="relative rounded-full bg-gray-700 p-1 text-gray-50 hover:text-white focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 focus:outline-hidden"
-            >
-              <span className="absolute -inset-1.5" />
-              <span className="sr-only">View notifications</span>
-              <BellIcon aria-hidden="true" className="size-6" />
-            </button>
-
-            {/* Profile dropdown */}
-            <Menu as="div" className="relative ml-3">
-              <div>
-                <MenuButton className="relative flex rounded-full bg-gray-800 text-sm focus:outline-hidden focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-gray-800">
-                  <span className="absolute -inset-1.5" />
-                  <span className="sr-only">Open user menu</span>
-                  <span className="inline-flex size-10 border border-white items-center justify-center rounded-full bg-gray-500">
-                    <span className="text-xs font-medium text-white">CY</span>
-                  </span>
-                </MenuButton>
-              </div>
-              <MenuItems
-                transition
-                className="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black/5 transition focus:outline-hidden data-closed:scale-95 data-closed:transform data-closed:opacity-0 data-enter:duration-100 data-enter:ease-out data-leave:duration-75 data-leave:ease-in"
-              >
-                <MenuItem>
-                  <NavLink
-                    href="/profile"
-                    className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:outline-hidden"
-                  >
-                    Your Profile
-                  </NavLink>
-                </MenuItem>
-                <MenuItem>
-                  <NavLink
-                    to="/settings"
-                    className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:outline-hidden"
-                  >
-                    Settings
-                  </NavLink>
-                </MenuItem>
-                <MenuItem>
-                  <NavLink
-                    to="/signout"
-                    className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:outline-hidden"
-                  >
-                    Sign out
-                  </NavLink>
-                </MenuItem>
-              </MenuItems>
-            </Menu>
-          </div>
+        <div>
+          <button onClick={handleClick} className="hover:border-b-2 border-balck   hover:bg-green-800 h-10 w-20 bg-slate-800 rounded-full " >login</button>
+        </div>
         </div>
       </div>
 
