@@ -1,6 +1,6 @@
 export default function Testimonials() {
   return (
-    <div>
+    <div className="bg-gray-900">
       <div className="bg-gray-900 ml-20">
     <p className="bg-gray-900 text-5xl font-bold ">PEOPLE'S THOUGHTS</p>
     <p className="bg-gray-900  tracking-[8px] m-3">What People Say About Us</p></div>
@@ -8,11 +8,7 @@ export default function Testimonials() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto grid max-w-2xl grid-cols-1 lg:mx-0 lg:max-w-none lg:grid-cols-2">
           <div className="flex flex-col pb-10 sm:pb-16 lg:pr-8 lg:pb-0 xl:pr-20">
-            <img
-              alt=""
-              src="https://tailwindcss.com/plus-assets/img/logos/tuple-logo-white.svg"
-              className="h-12 self-start"
-            />
+            <h1 className="text-2xl font-bold  ">Customer </h1>
             <figure className="mt-10 flex flex-auto flex-col justify-between">
               <blockquote className="text-lg/8 text-white">
                 <p>
@@ -30,19 +26,17 @@ export default function Testimonials() {
                   className="size-14 rounded-full bg-gray-800"
                 />
                 <div className="text-base">
-                  <div className="font-semibold text-white">Judith Black</div>
-                  <div className="mt-1 text-gray-400">CEO of Tuple</div>
+                  <div className="font-semibold text-white">Jamini yadav</div>
+                  <div className="mt-1 text-gray-400">20 days ago</div>
                 </div>
               </figcaption>
             </figure>
           </div>
           <div className="flex flex-col border-t border-white/10 pt-10 sm:pt-16 lg:border-t-0 lg:border-l lg:pt-0 lg:pl-8 xl:pl-20">
-            <img
-              alt=""
-              src="https://tailwindcss.com/plus-assets/img/logos/reform-logo-white.svg"
-              className="h-12 self-start"
-            />
+                      <h1 className="text-2xl font-bold  ">Customer </h1>
+
             <figure className="mt-10 flex flex-auto flex-col justify-between">
+              
               <blockquote className="text-lg/8 text-white">
                 <p>
                   “Excepteur veniam labore ullamco eiusmod. Pariatur consequat
@@ -59,9 +53,9 @@ export default function Testimonials() {
                 />
                 <div className="text-base">
                   <div className="font-semibold text-white">
-                    Joseph Rodriguez
+                    Abhishek Chaturvedhi
                   </div>
-                  <div className="mt-1 text-gray-400">CEO of Reform</div>
+                  <div className="mt-1 text-gray-400">11 days ago</div>
                 </div>
               </figcaption>
             </figure>

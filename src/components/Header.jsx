@@ -24,6 +24,7 @@ import { gsap } from "gsap";
 import { useRef } from "react";
 import { ScrollTrigger } from "gsap/all";
 import { useGSAP } from "@gsap/react";
+import Mode from "./Mode";
 
 const navigation = [
   { name: "Home", to: "/", current: true },
@@ -132,8 +133,14 @@ export default function Header() {
         <div>
           <button onClick={handleClick} className="hover:border-b-2 border-balck   hover:bg-green-800 h-10 w-20 bg-slate-800 rounded-full " >login</button>
         </div>
+        <div className="ml-10">
+                    <Mode/>
+                    </div>
+
         </div>
+        
       </div>
+      
 
       <DisclosurePanel className="sm:hidden">
         <div className="space-y-1 px-2 pt-2 pb-3">
@@ -152,6 +159,7 @@ export default function Header() {
               }
             >
               {item.name}
+              
             </DisclosureButton>
           ))}
         </div>

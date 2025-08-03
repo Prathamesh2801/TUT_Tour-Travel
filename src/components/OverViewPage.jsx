@@ -8,7 +8,7 @@ export default function OverViewPage() {
         <div className="lg:grid lg:grid-cols-2 lg:gap-8 xl:gap-16">
           <div className="shrink-0 max-w-md lg:max-w-lg mx-auto">
             <img
-              className="w-full dark:hidden"
+              className="w-full dark:hidden"s
               src={tourItem.imageSrc}
               alt={tourItem.imageAlt}
             />
@@ -23,10 +23,7 @@ export default function OverViewPage() {
             <h1 className="text-xl font-semibold text-gray-900 sm:text-2xl dark:text-white">
               {tourItem.name}
             </h1>
-            <div className="mt-4 sm:items-center sm:gap-4 sm:flex">
-              <p className="text-2xl font-extrabold text-gray-900 sm:text-3xl dark:text-white">
-                {tourItem.price}
-              </p>
+            <div className="mt-4  sm:items-center sm:gap-4 sm:flex">
 
               <div className="flex items-center gap-2 mt-2 sm:mt-0">
                 <div className="flex items-center gap-1">
@@ -34,7 +31,7 @@ export default function OverViewPage() {
                     className="w-4 h-4 text-yellow-300"
                     aria-hidden="true"
                     xmlns="http://www.w3.org/2000/svg"
-                    width="24"
+                    width="96"
                     height="24"
                     fill="currentColor"
                     viewBox="0 0 24 24"
@@ -86,7 +83,11 @@ export default function OverViewPage() {
                   {tourItem.reviews} Reviews
                 </a>
               </div>
-            </div>
+                            <p className="text-2xl font-extrabold text-gray-900 sm:text-3xl dark:text-white">
+                {tourItem.price}
+              </p>
+    </div>
+   
 
             <div className="mt-6 sm:gap-4 sm:items-center sm:flex sm:mt-8">
               <a
